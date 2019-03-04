@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from django.dispatch import Signal
+from async_signals import AsyncSignal
 
-pre_transition = Signal(providing_args=['instance', 'name', 'source', 'target'])
-post_transition = Signal(providing_args=['instance', 'name', 'source', 'target', 'exception'])
+pre_transition = AsyncSignal(providing_args=['instance', 'name', 'source', 'target'])
+post_transition = AsyncSignal(providing_args=['instance', 'name', 'source', 'target', 'exception'])

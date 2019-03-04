@@ -1,1 +1,2 @@
 django>=1.6
+https://github.com/MaciejNowicki/async-signals/archive/master.zip
